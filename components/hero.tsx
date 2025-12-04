@@ -42,7 +42,11 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
+<<<<<<< HEAD
               href="/DineshUpadhyayResume.pdf"
+=======
+              href="/Dinesh_Upadhyay_MERN_Stack_.Engineer.pdf"
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
               target="_blank"
               download
             >

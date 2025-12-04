@@ -7,7 +7,10 @@ const education = [
     institution: "Enginnering College Bikaner, Rajasthan",
     degree: "BCA, Batchlor Of Computer Science",
     period: "Jun 2022 - May 2025",
+<<<<<<< HEAD
     gpa: "PERCENTAGE: 62.4",
+=======
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
     icon: "🎓",
   },
   {
@@ -48,12 +51,20 @@ export default function Education() {
                 <p className="text-muted-foreground">{edu.degree}</p>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
                   <span>{edu.period}</span>
+<<<<<<< HEAD
                   {edu.gpa && (
+=======
+                  {/* {edu.gpa && (
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
                     <>
                       <span className="hidden sm:inline">•</span>
                       <span>{edu.gpa}</span>
                     </>
+<<<<<<< HEAD
                   )}
+=======
+                  )} */}
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
                 </div>
               </div>
             </motion.div>
