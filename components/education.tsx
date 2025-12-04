@@ -13,8 +13,7 @@ const education = [
   {
   institution: "Government Senior Secondary School, Bikaner, Rajasthan",
   degree: "12th - Science (Math)",
-  period: "2019 - 2022",
-  gpa: "61.76%",
+  period: "2021 - 2022",
   icon: "🏫",
 }
 
