@@ -1,35 +1,46 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Github, ExternalLink } from "lucide-react"
-import Link from "next/link"
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "E-Commerce-Website",
+    title: "Hospital Management System",
     description:
-      "A responsive front-end e-commerce website that displays a variety of products, categories, and modern shopping UI using HTML, CSS, and JavaScript. It offers a clean design and smooth user experience for exploring online products.",
-    image: "/E-Commerce-Website_.png",
-     tags: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    demoUrl: "https://dineshupadhyay08.github.io/E-Commerce-Website/",
-    githubUrl: "https://github.com/dineshupadhyay08/E-Commerce-Website",
-  features: [
-    "Fully responsive design using Bootstrap",
-    "Category-based product listing",
-    "Interactive UI with smooth transitions",
-    "Clean and modern e-commerce layout",
-  ]
+      "A full-stack hospital management system built using the MERN stack. It includes secure user authentication, patient records management, doctor listings, appointment booking, and an admin dashboard. Designed to improve hospital workflow with a clean, responsive UI.",
+    image: "/mern-stack-hospital-management.png",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Bootstrap", "JWT"],
+    demoUrl: "https://mern-stack-hospital-management-syst-zeta.vercel.app/",
+    githubUrl:
+      "https://github.com/dineshupadhyay08/MERN-Stack-Hospital-Management-System",
+    features: [
+      "Role-based authentication (Admin, Doctor, Patient)",
+      "Patient registration and medical record management",
+      "Doctor listing with specialization filters",
+      "Appointment booking & scheduling system",
+      "Admin dashboard for managing users and appointments",
+      "Fully responsive UI with Bootstrap and React",
+    ],
   },
   {
     title: "Wanderlust | Explore Places",
     description:
       "A full-stack web app to explore, list, and review tourist destinations, with features like user login, category filtering, reviews, and secure CRUD operations.",
     image: "/wanderlust.png",
-    tags: ["Node.js", "Express.js", "MongoDB", "EJS", "Bootstrap", "Cloudinary", "Passport.js"],
-    demoUrl: "https://wanderlust-npoq.onrender.com/listings",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "EJS",
+      "Bootstrap",
+      "Cloudinary",
+      "Passport.js",
+    ],
+    demoUrl: "https://wanderlust-8e7g.onrender.com/",
     githubUrl: "https://github.com/dineshupadhyay08/Wanderlust",
     features: [
       "User authentication using Passport.js (sign-up, login, logout)",
@@ -39,15 +50,24 @@ const projects = [
       "MongoDB Atlas for cloud-hosted, scalable database management",
     ],
   },
-  
+
   {
     title: "Binkeyit – Blinkit Clone (Grocery App)",
     description:
       "An online grocery shopping platform inspired by Blinkit, built using the MERN stack. It features secure authentication, product browsing, admin management, and modern UI with Tailwind CSS.",
     image: "/binkeyit-blinkit-clone-grocery-app-theta.vercel.app_121.png",
-    tags: ["ReactJS", "Node.js", "Express.js", "MongoDB Atlas", "Tailwind CSS", "JWT", "Nodemailer",],
+    tags: [
+      "ReactJS",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Tailwind CSS",
+      "JWT",
+      "Nodemailer",
+    ],
     demoUrl: "https://binkeyit-blinkit-clone-grocery-app-theta.vercel.app/",
-    githubUrl: "https://github.com/dineshupadhyay08/Binkeyit-Blinkit-Clone-Grocery-App-",
+    githubUrl:
+      "https://github.com/dineshupadhyay08/Binkeyit-Blinkit-Clone-Grocery-App-",
     features: [
       "OTP-based email verification and password recovery",
       "Secure login/signup with role-based access (JWT + refresh tokens)",
@@ -56,8 +76,7 @@ const projects = [
       "Clean and responsive UI with Tailwind CSS",
     ],
   },
-  
-]
+];
 
 export default function Projects() {
   return (
@@ -125,19 +144,17 @@ export default function Projects() {
                       <ExternalLink className="mr-2 h-4 w-4" /> Live
                     </Link>
                   </Button>
-                  {
-                    project.githubUrl && (
-                      <Button size="sm" variant="outline">
-                        <Link
-                          href={project.githubUrl}
-                          className="flex items-center"
-                          target="_blank"
-                        >
-                          <Github className="mr-2 h-4 w-4" /> Code
-                        </Link>
-                      </Button>
-                    )
-                  }
+                  {project.githubUrl && (
+                    <Button size="sm" variant="outline">
+                      <Link
+                        href={project.githubUrl}
+                        className="flex items-center"
+                        target="_blank"
+                      >
+                        <Github className="mr-2 h-4 w-4" /> Code
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -145,5 +162,5 @@ export default function Projects() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
