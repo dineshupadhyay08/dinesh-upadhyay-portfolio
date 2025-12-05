@@ -34,7 +34,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
               <Mail className="h-4 w-4" />
-              <a href="mailto:haquedot@gmail.com">
+              <a href="mailto:dineshupadhyay666@gmail.com">
                 dineshupadhyay666@gmail.com
               </a>
             </div>
@@ -51,17 +51,10 @@ export default function Hero() {
             modern web technologies.
           </p>
 
+          {/* BUTTONS SECTION */}
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
-<<<<<<< HEAD
-              href="/Dinesh_Upadhyay_MERN_Stack_.Engineer.pdf.pdf"
-=======
-<<<<<<< HEAD
-              href="/DineshUpadhyayResume.pdf"
-=======
-              href="/Dinesh_Upadhyay_MERN_Stack_.Engineer.pdf"
->>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
->>>>>>> 1425f6803fcbba3ecddc890ee301f98bcfb8bd00
+              href="/Dinesh_Upadhyay_MERN_Stack_Engineer.pdf"
               target="_blank"
               download
             >
@@ -69,6 +62,7 @@ export default function Hero() {
                 <Download className="mr-2 h-3 w-3 sm:h-4 sm:w-4" /> Resume
               </Button>
             </Link>
+
             <Link href="https://github.com/dineshupadhyay08" target="_blank">
               <Button
                 variant="outline"
@@ -78,6 +72,7 @@ export default function Hero() {
                 <Github className="h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
             </Link>
+
             <Link href="mailto:dineshupadhyay666@gmail.com" target="_blank">
               <Button
                 variant="outline"
@@ -87,7 +82,8 @@ export default function Hero() {
                 <Mail className="h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
             </Link>
-            <Link href="" target="_blank">
+
+            <Link href="#" target="_blank">
               <Button
                 variant="outline"
                 size="sm"
@@ -96,6 +92,7 @@ export default function Hero() {
                 <RiTwitterXLine className="h-3 w-3 sm:h-4 sm:w-4" />
               </Button>
             </Link>
+
             <Link
               href="https://www.linkedin.com/in/dinesh-upadhyay-030487247/"
               target="_blank"
@@ -111,6 +108,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
+        {/* RIGHT SIDE ANIMATED GRID */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -118,7 +116,7 @@ export default function Hero() {
           className="flex justify-center h-48 md:h-auto"
         >
           <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md aspect-square">
-            {/* Animated border */}
+            {/* Rotating Border */}
             <motion.div
               className="absolute inset-0 rounded-lg"
               animate={{
@@ -132,13 +130,12 @@ export default function Hero() {
               }}
             />
 
-            {/* Grid with floating tech stacks */}
+            {/* GRID BLOCKS */}
             <div className="absolute inset-0 grid grid-cols-2 gap-2 sm:gap-4 p-2 sm:p-4">
-              {/* Top Left - React Logo */}
+              {/* React Logo */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
                 <motion.div
                   animate={{ rotate: 360 }}
@@ -153,7 +150,7 @@ export default function Hero() {
                 </motion.div>
               </motion.div>
 
-              {/* Top Right - Node.js */}
+              {/* NodeJS */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 initial={{ y: -20 }}
@@ -165,110 +162,77 @@ export default function Hero() {
                   ease: "easeInOut",
                 }}
               >
-                <div className="text-4xl">
-                  <FaNode className="text-green-700" />
-                </div>
+                <FaNode className="text-4xl text-green-700" />
               </motion.div>
 
-              {/* Bottom Left - Database */}
-              <motion.div
-                className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
-                whileHover={{ scale: 1.05 }}
-              >
+              {/* MongoDB */}
+              <motion.div className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center">
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
+                  transition={{ duration: 3, repeat: Infinity }}
                   className="text-4xl text-green-600"
                 >
                   <SiMongodb />
                 </motion.div>
               </motion.div>
 
-              {/* Bottom Right - TypeScript */}
+              {/* Tailwind */}
               <motion.div
                 className="bg-muted rounded-lg p-2 sm:p-4 flex items-center justify-center"
                 animate={{
                   boxShadow: [
-                    "0 0 0 0px rgba(49, 130, 206, 0.1)",
-                    "0 0 0 10px rgba(49, 130, 206, 0.1)",
-                    "0 0 0 0px rgba(49, 130, 206, 0.1)",
+                    "0 0 0 0px rgba(49,130,206,0.1)",
+                    "0 0 0 10px rgba(49,130,206,0.1)",
+                    "0 0 0 0px rgba(49,130,206,0.1)",
                   ],
                 }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                }}
+                transition={{ duration: 4, repeat: Infinity }}
               >
-                <div className="text-4xl text-sky-500">
-                  <RiTailwindCssFill />
-                </div>
+                <RiTailwindCssFill className="text-4xl text-sky-500" />
               </motion.div>
             </div>
 
-            {/* Floating tech badges around the grid */}
+            {/* FLOATING BADGES */}
             <motion.div
-              className="absolute -top-3 sm:-top-5 -left-3 sm:-left-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              className="absolute -top-4 -left-4 bg-background px-3 py-1 rounded-full shadow-md border text-xs"
               animate={{
                 y: [0, -5, 0],
                 rotate: [0, 5, -5, 0],
               }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
+              transition={{ duration: 6, repeat: Infinity }}
             >
               ReactJs
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-3 sm:-bottom-5 -right-3 sm:-right-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              className="absolute -bottom-4 -right-4 bg-background px-3 py-1 rounded-full shadow-md border text-xs"
               animate={{
                 y: [0, 5, 0],
                 rotate: [0, -5, 5, 0],
               }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1,
-              }}
+              transition={{ duration: 6, repeat: Infinity, delay: 1 }}
             >
               Tailwind CSS
             </motion.div>
 
             <motion.div
-              className="absolute -top-3 sm:-top-5 -right-3 sm:-right-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              className="absolute -top-4 -right-4 bg-background px-3 py-1 rounded-full shadow-md border text-xs"
               animate={{
                 x: [0, 5, 0],
                 rotate: [0, 5, -5, 0],
               }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 0.5,
-              }}
+              transition={{ duration: 5, repeat: Infinity, delay: 0.5 }}
             >
               Node.js
             </motion.div>
 
             <motion.div
-              className="absolute -bottom-3 sm:-bottom-5 -left-3 sm:-left-5 bg-background px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm shadow-md border"
+              className="absolute -bottom-4 -left-4 bg-background px-3 py-1 rounded-full shadow-md border text-xs"
               animate={{
                 x: [0, -5, 0],
                 rotate: [0, -5, 5, 0],
               }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-                delay: 1.5,
-              }}
+              transition={{ duration: 5, repeat: Infinity, delay: 1.5 }}
             >
               MongoDB
             </motion.div>

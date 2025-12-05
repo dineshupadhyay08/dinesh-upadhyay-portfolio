@@ -1,26 +1,22 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const education = [
   {
-    institution: "Enginnering College Bikaner, Rajasthan",
-    degree: "BCA, Batchlor Of Computer Science",
+    institution: "Engineering College Bikaner, Rajasthan",
+    degree: "BCA, Bachelor of Computer Applications",
     period: "Jun 2022 - May 2025",
-<<<<<<< HEAD
-    gpa: "PERCENTAGE: 62.4",
-=======
->>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
+    gpa: "PERCENTAGE: 65.4",
     icon: "🎓",
   },
   {
-  institution: "Government Senior Secondary School, Bikaner, Rajasthan",
-  degree: "12th - Science (Math)",
-  period: "2021 - 2022",
-  icon: "🏫",
-}
-
-]
+    institution: "Government Senior Secondary School, Bikaner, Rajasthan",
+    degree: "12th - Science (Math)",
+    period: "2021 - 2022",
+    icon: "🏫",
+  },
+];
 
 export default function Education() {
   return (
@@ -46,25 +42,21 @@ export default function Education() {
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-muted flex items-center justify-center text-xl">
                 {edu.icon}
               </div>
+
               <div className="space-y-1">
                 <h3 className="text-lg font-semibold">{edu.institution}</h3>
                 <p className="text-muted-foreground">{edu.degree}</p>
+
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 text-sm text-muted-foreground">
                   <span>{edu.period}</span>
-<<<<<<< HEAD
+
+                  {/* Show GPA if exists */}
                   {edu.gpa && (
-=======
-                  {/* {edu.gpa && (
->>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
                     <>
                       <span className="hidden sm:inline">•</span>
                       <span>{edu.gpa}</span>
                     </>
-<<<<<<< HEAD
                   )}
-=======
-                  )} */}
->>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
                 </div>
               </div>
             </motion.div>
@@ -72,5 +64,5 @@ export default function Education() {
         </div>
       </motion.div>
     </section>
-  )
+  );
 }
