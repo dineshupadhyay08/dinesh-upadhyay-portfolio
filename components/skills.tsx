@@ -1,16 +1,33 @@
 "use client"
 
 import { motion } from "framer-motion"
+<<<<<<< HEAD
+import { FaBootstrap, FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaNode } from "react-icons/fa"
+import { SiMongodb, SiMysql } from "react-icons/si";
+=======
 import { FaBootstrap,  FaCss3, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact, } from "react-icons/fa";
 import { FaNode } from "react-icons/fa"
 import { SiCplusplus } from "react-icons/si";
 import { SiMongodb, SiMysql,SiRedux,SiExpress, SiPostman    } from "react-icons/si";
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
 import {  RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFigma } from "react-icons/io5";
 
 const skillCategories = [
   {
+<<<<<<< HEAD
+    title: "Front End",
+    skills: [
+      { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+      { name: "React.js", icon: <FaReact className="text-blue-500" /> },
+      { name: "Node.js", icon: <FaNode className="text-black dark:text-white" /> },
+      { name: "HTML", icon: <FaHtml5 className="text-orange-500" /> },
+      { name: "CSS", icon: <FaCss3 className="text-blue-500" /> },
+      { name: "Bootstrap", icon: <FaBootstrap className="text-purple-500" /> },
+      { name: "Tailwind CSS", icon: <RiTailwindCssFill className="text-cyan-400" /> },
+=======
     title: "Languages",
     skills: [
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
@@ -36,6 +53,7 @@ const skillCategories = [
     skills: [
       { name: "Node.js", icon: <FaNode className="text-black dark:text-white" /> },
       { name: "Express.js", icon: <SiExpress  className="text-black dark:text-white" /> },
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
     ],
   },
   {
@@ -52,7 +70,10 @@ const skillCategories = [
       { name: "GitHub", icon: <FaGithub className="text-black dark:text-white" /> },
       { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
       { name: "Figma", icon: <IoLogoFigma className="text-purple-600" /> },
+<<<<<<< HEAD
+=======
       { name: "Postman", icon: <SiPostman  className="text-orange-600" /> },
+>>>>>>> f15393ee6562e0af9bd7611ae6a8c6d8521af26f
     ],
   },
 ]
