@@ -54,7 +54,7 @@ export default function Hero() {
           {/* BUTTONS SECTION */}
           <div className="flex flex-wrap gap-2 sm:gap-3">
             <Link
-              href="/Dinesh_Upadhyay_MERN_Stack_Engineer.pdf"
+              href="/Dinesh_Upadhyay_MERN_Stack_Engineer - Google Docs.pdf"
               target="_blank"
               download
             >

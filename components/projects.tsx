@@ -40,7 +40,7 @@ const projects = [
       "Cloudinary",
       "Passport.js",
     ],
-    demoUrl: "https://wanderlust-8e7g.onrender.com/",
+    demoUrl: "https://wanderlust-npoq.onrender.com/listings",
     githubUrl: "https://github.com/dineshupadhyay08/Wanderlust",
     features: [
       "User authentication using Passport.js (sign-up, login, logout)",
