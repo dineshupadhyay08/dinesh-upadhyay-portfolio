@@ -39,35 +39,11 @@ const projects = [
       "Automated email workflows using Inngest and Nodemailer",
     ],
   },
-  {
-    title: "Wanderlust | Explore Places",
-    description:
-      "A full-stack web app to explore, list, and review tourist destinations, with features like user login, category filtering, reviews, and secure CRUD operations.",
-    image: "/wanderlust.png",
-    tags: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "EJS",
-      "Bootstrap",
-      "Cloudinary",
-      "Passport.js",
-    ],
-    demoUrl: "https://wanderlust-npoq.onrender.com/listings",
-    githubUrl: "https://github.com/dineshupadhyay08/Wanderlust",
-    features: [
-      "User authentication using Passport.js (sign-up, login, logout)",
-      "Travel listing management with create, edit, and delete functionality",
-      "Cloudinary integration for image uploads on each listing",
-      "Server-side data validation and centralized error handling",
-      "MongoDB Atlas for cloud-hosted, scalable database management",
-    ],
-  },
-
+  
   {
     title: "GymFlow — Gym Management & Membership Platform",
     description:
-      "A full-stack gym management platform developed for managing memberships, subscriptions, payments, and member operations. Designed with separate user and admin experiences to help fitness businesses streamline daily operations and track growth efficiently.",
+    "A full-stack gym management platform developed for managing memberships, subscriptions, payments, and member operations. Designed with separate user and admin experiences to help fitness businesses streamline daily operations and track growth efficiently.",
     image: "/Gym_Preview.png",
     tags: [
       "React.js",
@@ -88,6 +64,30 @@ const projects = [
       "Secure JWT authentication with role-based access control",
       "Responsive admin panel for managing gym operations",
       "Member profiles, membership plans, and renewal workflows",
+    ],
+  },
+  {
+    title: "Wanderlust | Explore Places",
+    description:
+      "A full-stack web app to explore, list, and review tourist destinations, with features like user login, category filtering, reviews, and secure CRUD operations.",
+    image: "/wanderlust_Preview.png",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "EJS",
+      "Bootstrap",
+      "Cloudinary",
+      "Passport.js",
+    ],
+    demoUrl: "https://wanderlust-npoq.onrender.com/listings",
+    githubUrl: "https://github.com/dineshupadhyay08/Wanderlust",
+    features: [
+      "User authentication using Passport.js (sign-up, login, logout)",
+      "Travel listing management with create, edit, and delete functionality",
+      "Cloudinary integration for image uploads on each listing",
+      "Server-side data validation and centralized error handling",
+      "MongoDB Atlas for cloud-hosted, scalable database management",
     ],
   },
 ];
