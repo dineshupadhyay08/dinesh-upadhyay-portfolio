@@ -9,21 +9,34 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Hospital Management System",
+    title: "Signalist — AI Powered Stock Analysis Platform",
     description:
-      "A full-stack hospital management system built using the MERN stack. It includes secure user authentication, patient records management, doctor listings, appointment booking, and an admin dashboard. Designed to improve hospital workflow with a clean, responsive UI.",
-    image: "/mern-stack-hospital-management.png",
-    tags: ["MongoDB", "Express", "React", "Node.js", "Bootstrap", "JWT"],
-    demoUrl: "https://mern-stack-hospital-management-syst-zeta.vercel.app/",
-    githubUrl:
-      "https://github.com/dineshupadhyay08/MERN-Stack-Hospital-Management-System",
+      "A modern fintech platform built with Next.js 16, TypeScript, MongoDB, Finnhub API, and TradingView Widgets. It provides real-time market insights, stock research tools, personalized watchlists, secure authentication, and AI-powered user onboarding.",
+
+    image: "/stock_Analysis.png",
+
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Finnhub API",
+      "TradingView",
+      "Better Auth",
+      "Tailwind CSS",
+      "Inngest",
+    ],
+
+    demoUrl: "https://stock-analysis-app-ten.vercel.app/",
+
+    githubUrl: "https://github.com/dineshupadhyay08/Stock_Analysis_App",
+
     features: [
-      "Role-based authentication (Admin, Doctor, Patient)",
-      "Patient registration and medical record management",
-      "Doctor listing with specialization filters",
-      "Appointment booking & scheduling system",
-      "Admin dashboard for managing users and appointments",
-      "Fully responsive UI with Bootstrap and React",
+      "Real-time market dashboard with TradingView widgets",
+      "Stock analysis pages with charts, news, and company insights",
+      "Personalized watchlists for tracking favorite stocks",
+      "Secure authentication and protected user sessions",
+      "AI-powered onboarding based on investor preferences",
+      "Automated email workflows using Inngest and Nodemailer",
     ],
   },
   {
@@ -52,28 +65,29 @@ const projects = [
   },
 
   {
-    title: "Binkeyit – Blinkit Clone (Grocery App)",
+    title: "GymFlow — Gym Management & Membership Platform",
     description:
-      "An online grocery shopping platform inspired by Blinkit, built using the MERN stack. It features secure authentication, product browsing, admin management, and modern UI with Tailwind CSS.",
-    image: "/binkeyit-blinkit-clone-grocery-app-theta.vercel.app_121.png",
+      "A full-stack gym management platform developed for managing memberships, subscriptions, payments, and member operations. Designed with separate user and admin experiences to help fitness businesses streamline daily operations and track growth efficiently.",
+    image: "/Gym_Preview.png",
     tags: [
-      "ReactJS",
+      "React.js",
       "Node.js",
       "Express.js",
-      "MongoDB Atlas",
-      "Tailwind CSS",
+      "MongoDB",
       "JWT",
-      "Nodemailer",
+      "Tailwind CSS",
+      "Admin Dashboard",
+      "SaaS",
     ],
-    demoUrl: "https://binkeyit-blinkit-clone-grocery-app-theta.vercel.app/",
-    githubUrl:
-      "https://github.com/dineshupadhyay08/Binkeyit-Blinkit-Clone-Grocery-App-",
+    demoUrl: "https://front-end-alpha-pearl-78.vercel.app",
+    githubUrl: "https://github.com/dineshupadhyay08/fitflow-mobile",
     features: [
-      "OTP-based email verification and password recovery",
-      "Secure login/signup with role-based access (JWT + refresh tokens)",
-      "Admin panel for product/category management",
-      "Add to cart, browse by category, and place orders",
-      "Clean and responsive UI with Tailwind CSS",
+      "Comprehensive member and membership management system",
+      "Subscription tracking with payment history and due-date monitoring",
+      "Business analytics dashboard with revenue and membership insights",
+      "Secure JWT authentication with role-based access control",
+      "Responsive admin panel for managing gym operations",
+      "Member profiles, membership plans, and renewal workflows",
     ],
   },
 ];
