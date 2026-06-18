@@ -22,20 +22,36 @@ import {
 import { RiTailwindCssFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFigma } from "react-icons/io5";
+import { SiPython } from "react-icons/si";
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiPostgresql,
+  SiDocker,
+  SiVercel,
+  SiRender,
+  SiJsonwebtokens,
+} from "react-icons/si";
 
 const skillCategories = [
   {
     title: "Languages",
     skills: [
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
+      { name: "Python", icon: <SiPython className="text-yellow-500" /> },
       { name: "C++", icon: <SiCplusplus className="text-blue-400" /> },
-      { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
     ],
   },
+
   {
-    title: "Front End",
+    title: "Frontend",
     skills: [
       { name: "React.js", icon: <FaReact className="text-blue-500" /> },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs className="text-black dark:text-white" />,
+      },
       { name: "Redux", icon: <SiRedux className="text-purple-500" /> },
       {
         name: "Tailwind CSS",
@@ -46,23 +62,46 @@ const skillCategories = [
       { name: "CSS", icon: <FaCss3 className="text-blue-500" /> },
     ],
   },
+
   {
-    title: "Back End",
+    title: "Backend",
     skills: [
       { name: "Node.js", icon: <FaNode className="text-green-600" /> },
       {
         name: "Express.js",
         icon: <SiExpress className="text-black dark:text-white" />,
       },
+      {
+        name: "JWT Auth",
+        icon: <SiJsonwebtokens className="text-pink-500" />,
+      },
     ],
   },
+
   {
     title: "Databases",
     skills: [
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      {
+        name: "PostgreSQL",
+        icon: <SiPostgresql className="text-blue-500" />,
+      },
       { name: "MySQL", icon: <SiMysql className="text-blue-600" /> },
     ],
   },
+
+  {
+    title: "DevOps & Deployment",
+    skills: [
+      { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
+      {
+        name: "Vercel",
+        icon: <SiVercel className="text-black dark:text-white" />,
+      },
+      { name: "Render", icon: <SiRender className="text-purple-500" /> },
+    ],
+  },
+
   {
     title: "Tools & Platforms",
     skills: [
@@ -72,8 +111,8 @@ const skillCategories = [
         icon: <FaGithub className="text-black dark:text-white" />,
       },
       { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
-      { name: "Figma", icon: <IoLogoFigma className="text-purple-600" /> },
       { name: "Postman", icon: <SiPostman className="text-orange-600" /> },
+      { name: "Figma", icon: <IoLogoFigma className="text-purple-600" /> },
     ],
   },
 ];
