@@ -39,11 +39,11 @@ const projects = [
       "Automated email workflows using Inngest and Nodemailer",
     ],
   },
-  
+
   {
     title: "GymFlow — Gym Management & Membership Platform",
     description:
-    "A full-stack gym management platform developed for managing memberships, subscriptions, payments, and member operations. Designed with separate user and admin experiences to help fitness businesses streamline daily operations and track growth efficiently.",
+      "A full-stack gym management platform developed for managing memberships, subscriptions, payments, and member operations. Designed with separate user and admin experiences to help fitness businesses streamline daily operations and track growth efficiently.",
     image: "/Gym_Preview.png",
     tags: [
       "React.js",
@@ -80,7 +80,7 @@ const projects = [
       "Cloudinary",
       "Passport.js",
     ],
-    demoUrl: "https://wanderlust-npoq.onrender.com/listings",
+    demoUrl: "https://wanderlust-8e7g.onrender.com/listings",
     githubUrl: "https://github.com/dineshupadhyay08/Wanderlust",
     features: [
       "User authentication using Passport.js (sign-up, login, logout)",
@@ -88,6 +88,32 @@ const projects = [
       "Cloudinary integration for image uploads on each listing",
       "Server-side data validation and centralized error handling",
       "MongoDB Atlas for cloud-hosted, scalable database management",
+    ],
+  },
+  {
+    title: "Movie Ticket Booking Platform",
+    description:
+      "A full-stack movie ticket booking application that allows users to browse movies, select seats, book tickets, manage bookings, and enjoy a seamless cinema booking experience with secure authentication and admin controls.",
+    image: "/movie_Preview.png",
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Clerk",
+      "Inngest",
+      "Cloudinary",
+    ],
+    demoUrl: "https://movie-ticket-booking-front-end.vercel.app/",
+    githubUrl:
+      "https://github.com/dineshupadhyay08/Movie_Ticket_Booking_Project",
+    features: [
+      "Secure user authentication and session management using Clerk",
+      "Interactive seat selection system with real-time booking experience",
+      "Movie browsing, show scheduling, and ticket booking functionality",
+      "Admin dashboard for managing shows, movies, and bookings",
+      "MongoDB-powered scalable backend with event-driven workflows using Inngest",
     ],
   },
 ];
